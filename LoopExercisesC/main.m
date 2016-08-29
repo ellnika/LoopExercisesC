@@ -90,16 +90,32 @@ int main(int argc, const char * argv[]) {
         
 //4. Write a program that prints all the prime numbers smaller than a give numer N.
         
-    NSLog(@"Enter the number\n");
-    int n;
-        n=0;
-    scanf("%i", &n);
-    NSLog(@"You have entered %i", n);
-        //prime(n);
-        for (int i = 1; i< n; i++) {
-            prime(i);
-        }
+//    NSLog(@"Enter the number\n");
+//    int n;
+//        n=0;
+//    scanf("%i", &n);
+//    NSLog(@"You have entered %i", n);
+//        //prime(n);
+//        for (int i = 1; i< n; i++) {
+//            prime(i);
+//        }
   // 5. Write a program that takes a number and prints its reverse
+  //
+        
+  //6. Write a program that takes a number N and determines how many terms in the sum 1+2+3... are necessary to exceed N. Eg if N=15, then 1+2+3+4+5=15 so the number of terms is 5. If N=25 then 1+2+3+4+5+6+7=28 so the number of terms is 7
+        
+        NSLog(@"Enter the number\n");
+        int n;
+        n=0;
+        scanf("%i", &n);
+        NSLog(@"You have entered %i", n);
+        int i = 1;
+        int sum = 0;
+            while (sum < n) {
+                sum = sum+i;
+                i++;
+            }
+        NSLog(@"The number of terms necessary to exceed %i is %i", n, i-1);
         
     }
     return 0;
