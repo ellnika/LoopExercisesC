@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PrimeNumber.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -62,29 +63,43 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"New number is %i", digitSum);
 
 // 3. Given a number calculate the sum of its digits until the sum is smaller than 10. Eg 346257 the sum is 3+4+6+2+5+7=27 and its >10 so we calculate again 2+7=9 so the answer is 9.
-     
-                NSLog(@"Enter the number\n");
-                int n;
-                scanf("%i", &n);
-                NSLog(@"You have entered %i", n);
+//     
+//                NSLog(@"Enter the number\n");
+//                int n;
+//                scanf("%i", &n);
+//                NSLog(@"You have entered %i", n);
+//        
+//        int digitSum = 0;
+//                int givenNumber=n;
+//        
+//                for (int i =1; i <= n; i++)
+//                {
+//                    int lastDigit = givenNumber % 10;
+//                    givenNumber =n/pow(10, i);
+//                    digitSum=digitSum + lastDigit;
+//                }
+//        while (digitSum > 10) {
+//            int newLastDigit = digitSum % 10;
+//            digitSum = digitSum/10;
+//            digitSum =  digitSum + newLastDigit;
+//        }
+//        
+//        NSLog(@"The sum of all digits for number %i until the sum is smaller than 10 is %i", n, digitSum);
+//    
+//
         
-        int digitSum = 0;
-                int givenNumber=n;
+//4. Write a program that prints all the prime numbers smaller than a give numer N.
         
-                for (int i =1; i <= n; i++)
-                {
-                    int lastDigit = givenNumber % 10;
-                    givenNumber =n/pow(10, i);
-                    digitSum=digitSum + lastDigit;
-                }
-        while (digitSum > 10) {
-            int newLastDigit = digitSum % 10;
-            digitSum = digitSum/10;
-            digitSum =  digitSum + newLastDigit;
+    NSLog(@"Enter the number\n");
+    int n;
+        n=0;
+    scanf("%i", &n);
+    NSLog(@"You have entered %i", n);
+        //prime(n);
+        for (int i = 1; i< n; i++) {
+            prime(i);
         }
-        
-        NSLog(@"The sum of all digits for number %i until the sum is smaller than 10 is %i", n, digitSum);
-    
+  // 5. Write a program that takes a number and prints its reverse
         
     }
     return 0;

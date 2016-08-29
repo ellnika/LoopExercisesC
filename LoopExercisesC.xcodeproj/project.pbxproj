@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEF0B9DF1D74894F00688CA6 /* PrimeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B9DE1D74894F00688CA6 /* PrimeNumber.m */; };
 		CEF578401D7017A800E43323 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5783F1D7017A800E43323 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CEF0B9DD1D74894F00688CA6 /* PrimeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeNumber.h; sourceTree = "<group>"; };
+		CEF0B9DE1D74894F00688CA6 /* PrimeNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeNumber.m; sourceTree = "<group>"; };
 		CEF5783C1D7017A800E43323 /* LoopExercisesC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LoopExercisesC; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF5783F1D7017A800E43323 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CEF5783F1D7017A800E43323 /* main.m */,
+				CEF0B9DD1D74894F00688CA6 /* PrimeNumber.h */,
+				CEF0B9DE1D74894F00688CA6 /* PrimeNumber.m */,
 			);
 			path = LoopExercisesC;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF0B9DF1D74894F00688CA6 /* PrimeNumber.m in Sources */,
 				CEF578401D7017A800E43323 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 				CEF578451D7017A800E43323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
