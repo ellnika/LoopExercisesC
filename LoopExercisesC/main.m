@@ -45,23 +45,46 @@ int main(int argc, const char * argv[]) {
         
         //2. Given a number calculate the sum of its digits. Eg for 321455 the sum should be 20
         
-        NSLog(@"Enter the number");
-        int n;
-        scanf("%i", &n);
-        NSLog(@"You have entered %i", n);
+//        NSLog(@"Enter the number");
+//        int n;
+//        scanf("%i", &n);
+//        NSLog(@"You have entered %i", n);
+//        int digitSum = 0;
+//        int givenNumber=n;
+//        
+//        for (int i =1; i <= n; i++)
+//        {
+//            int number = givenNumber % 10;
+//            givenNumber =n/pow(10, i);
+//            digitSum=digitSum + number;
+//        }
+//        
+//        NSLog(@"New number is %i", digitSum);
+
+// 3. Given a number calculate the sum of its digits until the sum is smaller than 10. Eg 346257 the sum is 3+4+6+2+5+7=27 and its >10 so we calculate again 2+7=9 so the answer is 9.
+     
+                NSLog(@"Enter the number\n");
+                int n;
+                scanf("%i", &n);
+                NSLog(@"You have entered %i", n);
+        
         int digitSum = 0;
+                int givenNumber=n;
         
-        int number ;
-        int newNumber=n;
-        
-        for (int i =1; i <= n; i++)
-        {
-            number = newNumber % 10;
-            newNumber =n/pow(10, i);
-            digitSum=digitSum + number;
+                for (int i =1; i <= n; i++)
+                {
+                    int lastDigit = givenNumber % 10;
+                    givenNumber =n/pow(10, i);
+                    digitSum=digitSum + lastDigit;
+                }
+        while (digitSum > 10) {
+            int newLastDigit = digitSum % 10;
+            digitSum = digitSum/10;
+            digitSum =  digitSum + newLastDigit;
         }
         
-        NSLog(@"New number is %i", digitSum);
+        NSLog(@"The sum of all digits for number %i until the sum is smaller than 10 is %i", n, digitSum);
+    
         
     }
     return 0;
